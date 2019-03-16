@@ -196,6 +196,8 @@ blockquote span {
   color: #f4f4f4;
 }
 
+/* header */
+
 .v-header{
   height:100vh;
   display:flex;
@@ -243,7 +245,6 @@ blockquote span {
 
 .header-content h1{
   font-size:10rem;
-  font-weight: normal;
   letter-spacing: 0.2rem;
 }
 
