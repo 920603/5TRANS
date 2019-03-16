@@ -1,9 +1,20 @@
 /* global */
+/* @media all and (-ms-high-contrast:none){
+  html {
+    display: none;
+    content: 'This website is not optimized for Internet Explorer, please try again in a different web browser';
+  }
+  *::-ms-backdrop, 
+  html {
+    display: none;
+    content: 'This website is not optimized for Internet Explorer, please try again in a different web browser';
+  }
+} */
+
 * {
   margin: 0;
   padding: 0;
 }
-
 
 body {
   font-family: "Julius Sans One";
@@ -16,6 +27,30 @@ button:focus {
   outline: 0;
 }
 
+
+
+
+
+blockquote{
+  font-size: 1.4em;
+  width:70%;
+  margin:50px auto;
+  color: #f4f4f4;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #E5A558 ;
+  line-height:1.6;
+  position: relative;
+  background:rgb(54, 74, 100);
+}
+
+blockquote span {
+  color: #E5A558;
+  text-decoration: underline;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
 
 /* navigation bar */
 
@@ -207,24 +242,41 @@ header p {
 
 .container {
   margin: 40px 80px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Raleway;
   text-align: justify;
 }
 
+section {
+  line-height: 1.8;
+}
+
 section#main {
-  line-height: 1.4;
-  margin-bottom: 40px;
-  padding: 20px 100px;
+  margin-top: 30px;
+  padding: 20px 150px;
   border-top: 1px solid #E5A558;
   border-bottom: 1px solid #E5A558;
 }
 
+section#main .team-members{
+  margin: 40px;
+}
+
+section#main ul {
+  padding: 0 50px;
+}
+
+
+section#main .center {
+  margin: 50px 0;
+  text-align: center;
+}
+
 section#statistics {
+  margin-top: 40px;
   display: grid;
   grid-gap: 10px;
   grid-gap: 30px;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr) ) ;
-  
 }
 
 section#statistics div {
@@ -242,20 +294,6 @@ section#statistics img {
   margin-bottom: 15px;
 }
 
-section#presentation {
-  padding: 50px;
-}
-
-section#presentation p {
-  padding: 0 30px;
-}
-
-section#presentation h2 {
-  width: 300px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #E5A558;
-}
-
 section#icons {
   display: flex;
   align-items: center;
@@ -270,6 +308,8 @@ section#icons img {
   border-radius: 100px;
   border: 2px dashed #E5A558;
 }
+
+
 
 /* footer */
 
@@ -321,3 +361,4 @@ footer .highlight {
   margin-top: 70px;
   width: 100%;
 }
+
