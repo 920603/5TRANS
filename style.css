@@ -1,16 +1,4 @@
 /* global */
-/* @media all and (-ms-high-contrast:none){
-  html {
-    display: none;
-    content: 'This website is not optimized for Internet Explorer, please try again in a different web browser';
-  }
-  *::-ms-backdrop, 
-  html {
-    display: none;
-    content: 'This website is not optimized for Internet Explorer, please try again in a different web browser';
-  }
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -26,10 +14,6 @@ body {
 button:focus {
   outline: 0;
 }
-
-
-
-
 
 blockquote{
   font-size: 1.4em;
@@ -50,6 +34,13 @@ blockquote span {
   position: absolute;
   top: 20px;
   left: 20px;
+}
+
+.grow {
+  transition: all 0.5s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.05);
 }
 
 /* navigation bar */
@@ -361,4 +352,3 @@ footer .highlight {
   margin-top: 70px;
   width: 100%;
 }
-
