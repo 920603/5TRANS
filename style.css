@@ -48,7 +48,7 @@ blockquote span {
 .navbar {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -196,38 +196,65 @@ blockquote span {
   color: #f4f4f4;
 }
 
-header {
-  background: url(img/header.jpg) no-repeat center;
-  background-size: cover;
-  height: 100vh;
+.v-header{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  color:#fff;
 }
 
-header h1 {
-  font-size: 10rem;
+.fullscreen-video-wrap{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+.fullscreen-video-wrap video{
+  min-height: 100%;
+  max-width: 100%;
+}
+
+.header-overlay{
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+  background: #2F2D2E;
+  opacity: 0.9;
+}
+
+.header-content{
+  height: 100%;
+  z-index: 2;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.header-content div {
+  align-self: center;
+}
+
+.header-content h1{
+  font-size:10rem;
   font-weight: normal;
   letter-spacing: 0.2rem;
 }
 
-header p {
-  font-size: 3rem;
+.header-content p{
+  font-size:3rem;
 }
 
-.dark {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(47, 45, 46, 0.6);
-  
-  display: grid;
-  grid-template-rows: auto 20px;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-.dark img {
+.header-content .icon {
+  z-index: 3;
   width: 30px;
   justify-self: center;
-  align-self: end;
   margin-bottom: 20px;
 }
 
